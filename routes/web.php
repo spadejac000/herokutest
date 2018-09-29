@@ -16,5 +16,6 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::resource('moneys', 'MoneysController');
 
 Route::get('/home', 'HomeController@index')->name('home');
